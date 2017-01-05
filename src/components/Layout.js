@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+
 class Layout extends Component {
 
   static propTypes = {
@@ -8,8 +9,16 @@ class Layout extends Component {
 
   render () {
     return (
-      <div>
-        <h1>The Bakin Bacon</h1>
+      <div className='wrapper'>
+        <header>
+          <div>
+            <img src='http://i.imgur.com/kGy2KU0.png' alt='pig head logo' />
+          </div>
+          <div>
+            <h1>The Bakin Bacon</h1>
+            <h2>"Bacon, making everything better since forever"</h2>
+          </div>
+        </header>
         <nav>
           <ul>
             <li>
@@ -26,7 +35,6 @@ class Layout extends Component {
             </li>
           </ul>
         </nav>
-        {/* What is this doing? */}
         <main>
           {this.props.children}
         </main>

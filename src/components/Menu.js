@@ -1,34 +1,38 @@
 import React, { Component } from 'react'
+import MenuSection from './MenuSection'
+import menuItems from '../menu.json'
 
 class Menu extends Component {
 
   render () {
+    // console.log()
+    //
+    // const categories = [
+    //   <li>Appetizers</li>,
+    //   <li>Entrees</li>,
+    //   <li>Deserts</li>,
+    //   <li>Bakin Specials</li>
+    // ]
+
+    const categories = menuItems.categories.map((category, i) => {
+      return <li key={i}>{category.name}</li>
+    })
+
+    const sections = menuItems.categories.map((category, i) => {
+      return <MenuSection name={category.name} items={category.items} key={i} />
+    })
+
     return (
-      <div>
+      <div className='wrapper'>
         <h2>Our Menu</h2>
 
-        <nav>
+        <section className='categories'>
           <ul>
-            <li>Appetizers</li>
-            <li>Entrees</li>
-            <li>Deserts</li>
-            <li>Bakin Specials</li>
+            {categories}
           </ul>
-        </nav>
-
-        <section>
-          <h3>Appetizers</h3>
-
-          <table>
-            <tbody>
-              <tr>
-                <th>Bacon Bites</th>
-                <td>Bacon wrapped mini andouille sausage bites. Lightly smoked maple crusted bacon</td>
-                <td>$8</td>
-              </tr>
-            </tbody>
-          </table>
         </section>
+
+        {sections}
       </div>
     )
   }
