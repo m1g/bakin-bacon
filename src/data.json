@@ -1,0 +1,93 @@
+{
+  "locations": [
+    {
+      "slug": "st-pete",
+      "name": "Downtown St. Petersburg",
+      "address": "260 1st Ave S, Suite 300, St Petersburg, FL, 33701",
+      "hours": [
+        { "days": "Mon-Fri", "hours": "11AM - 9PM"},
+        { "days": "Sat", "hours": "11AM - 12AM"},
+        { "days": "Sun", "hours": "Closed"}
+      ],
+      "mapPlaceId": "ChIJ2ckQoZzhwogR_sFtWCqwpWs"
+    }, {
+      "slug": "bradenton",
+      "name": "Bradenton",
+      "address": "Across the Street from Ellenton Outlets",
+      "hours": [
+        { "days": "Mon-Fri", "hours": "11AM - 9PM"},
+        { "days": "Sat", "hours": "11AM - 12AM"},
+        { "days": "Sun", "hours": "Closed"}
+      ],
+      "mapPlaceId": "ChIJDWEZ1zX8VDARDHDTZoyjHXI"
+    }, {
+      "slug": "sarasota",
+      "name": "Sarasota",
+      "address": "2045 Bahia Vista St, Sarasota, FL 34239",
+      "hours": [
+        { "days": "Mon-Fri", "hours": "11AM - 8PM"},
+        { "days": "Sat", "hours": "11AM - 12AM"},
+        { "days": "Sun", "hours": "11AM - 12AM"}
+      ],
+      "mapPlaceId": "ChIJoW2z0FxAw4gRgA_3vQpnjA8"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Appetizers",
+      "slug": "apps",
+      "items": [
+        {
+          "name": "Bacon Bites",
+          "description": "Bacon wrapped mini andouille sausage bites. Lightly smoked maple crusted bacon",
+          "price": 800
+        },
+        {
+          "name": "Bacon Bites",
+          "description": "Bacon wrapped mini andouille sausage bites. Lightly smoked maple crusted bacon",
+          "price": 800
+        },
+        {
+          "name": "Bacon Bites",
+          "description": "Bacon wrapped mini andouille sausage bites. Lightly smoked maple crusted bacon",
+          "price": 800
+        },
+        {
+          "name": "Bacon Bites",
+          "description": "Bacon wrapped mini andouille sausage bites. Lightly smoked maple crusted bacon",
+          "price": 800
+        }
+      ]
+    }, {
+      "name": "Entrees",
+      "slug": "meals",
+      "items": [
+        {
+          "name": "Buffalo Wings",
+          "description": "Yumm",
+          "price": 30
+        }
+      ]
+    }, {
+      "name": "Deserts",
+      "slug": "noms",
+      "items": [
+        {
+          "name": "Deep Fried Mars Bar",
+          "description": "Blame Glasgow",
+          "price": 699
+        }
+      ]
+    }, {
+      "name": "Bakin Specials",
+      "slug": "specials",
+      "items": [
+        {
+          "name": "Deep Fried Jmars Bar",
+          "description": "Blame Glasgow",
+          "price": 699
+        }
+      ]
+    }
+  ]
+}

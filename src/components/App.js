@@ -6,6 +6,8 @@ import Menu from './Menu'
 import Contact from './Contact'
 import Home from './Home'
 import Locations from './Locations'
+import MenuSection from './MenuSection'
+import Location from './Location'
 
 class App extends Component {
 
@@ -14,9 +16,12 @@ class App extends Component {
       <Router history={browserHistory}>
         <Route component={Layout}>
           <Route path='/' component={Home} />
-          <Route path='/menu' component={Menu} />
+          <Route path='/menu' component={Menu}>
+            <Route path=':slug' component={MenuSection} />
+          </Route>
           <Route path='/contact' component={Contact} />
           <Route path='/locations' component={Locations} />
+          <Route path='/locations/:slug' component={Location} />
         </Route>
       </Router>
     )

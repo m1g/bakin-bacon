@@ -12,11 +12,11 @@ class Layout extends Component {
       <div className='wrapper'>
         <header>
           <div>
-            <img src='http://i.imgur.com/kGy2KU0.png' alt='pig head logo' />
+            <img src='http://i.imgur.com/un9rR5q.png' alt='pig head logo' height='350' width='350' />
           </div>
-          <div>
+          <div className='copy'>
             <h1>The Bakin Bacon</h1>
-            <h2>"Bacon, making everything better since forever"</h2>
+            <h2>"Put bacon on everything"</h2>
           </div>
         </header>
         <nav>
